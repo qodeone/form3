@@ -427,7 +427,7 @@ h3.sidetitle {
     margin: -14px !important;
     padding: 15px;
     background-color: #000;
-    border-radius: 8px;
+   
 }
 @media (max-width: 767px) {
 .form3-title h1.page-title, .form3-title-wide h1.page-title {

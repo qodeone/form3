@@ -46,23 +46,20 @@
 
 {{ attach_library('form3/skrollr') }}
 
-
 <div id="skrollr-body">
 
   <div style="background:url({{ base_path ~ directory }}/img/hometop.jpg) top center #1a1a1a;background-size:cover;">
-  
-  
-  
-  {% include '@form3/includes/header.html.twig' %}
-  
-  
-  
+
+    {% include '@form3/includes/header.html.twig' %}
+
     <div class="uk-container uk-container-large">
       <div class="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true; offset-bottom: 50px">
         <div class="uk-inline uk-width-1-1 uk-position-relative">
           <div class="uk-width-3-5@m uk-width-1-2@l">
             <h2 class="front-headline" uk-scrollspy="cls:uk-animation-slide-top; repeat:true; delay:200;">
-              Free <span>Training</span> Videos
+              Free
+              <span>Training</span>
+              Videos
             </h2>
             <p class="front-subheading">of the world's best professional audio products</p>
             <button class="uk-button uk-button-secondary first">Learning Center</button>
@@ -71,172 +68,182 @@
         </div>
       </div>
     </div>
-    
-    
-    
-<div class="uk-container">
-	<div class="uk-child-width-1-3@s uk-child-width-1-5@m uk-text-center uk-light uk-margin-bottom bn-blocks" uk-grid>
-	<div>
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span class="red">100%</span> Unbiased
-		</h2>
-	</div>
-	</div>
-	<div>
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>FREE</span> Learning
-		</h2>
-	</div>
-	</div>
-	<div class="uk-visible@m">
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>PRO</span> Gear
-		</h2>
-	</div>
-	</div>
-	<div>
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>EXPERT</span> Tricks
-		</h2>
-	</div>
-	</div>
-	<div class="uk-visible@m">
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>INSTANT</span> Access
-		</h2>
-	</div>
-	</div>
-	
-	</div>
-  </div>
-    
-    
-    
-    
-    
-    
+
+    <div class="uk-container">
+      <div class="uk-child-width-1-3@s uk-child-width-1-5@m uk-text-center uk-light uk-margin-bottom bn-blocks" uk-grid>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h2>
+              <span class="red">100%</span>
+              Unbiased
+            </h2>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h2>
+              <span>FREE</span>
+              Learning
+            </h2>
+          </div>
+        </div>
+        <div class="uk-visible@m">
+          <div class="uk-card uk-card-body">
+            <h2>
+              <span>PRO</span>
+              Gear
+            </h2>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-body">
+            <h2>
+              <span>EXPERT</span>
+              Tricks
+            </h2>
+          </div>
+        </div>
+        <div class="uk-visible@m">
+          <div class="uk-card uk-card-body">
+            <h2>
+              <span>INSTANT</span>
+              Access
+            </h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 
   <div class="uk-background-cover" style="background:url({{ base_path ~ directory }}/img/mixdarkback.jpg) top center #1a1a1a;">
-    
+
     <div class="uk-container uk-container-center">
-    
-    <div class="uk-grid-divider uk-grid-small uk-child-width-1-2@m uk-child-width-expand@l uk-text-center uk-light uk-margin-large-top uk-margin-large-bottom" uk-grid>
-      <div>
-      <div class="uk-card">
-        <div class="suite-value-top">
-          
+
+      <div class="uk-grid-divider uk-grid-small uk-child-width-1-2@m uk-child-width-expand@l uk-text-center uk-light uk-margin-large-top uk-margin-large-bottom" uk-grid>
+        <div>
+          <div class="uk-card">
+            <div class="suite-value-top"></div>
+            <div class="suite-number">
+              1
+            </div>
+            <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
+              <p>FREE</p>
+            </div>
+            <div class="suite-benefits">
+              <ul class="uk-list">
+                <li>Industry expert, unbiased product review video</li>
+              </ul>
+            </div>
+            <div class="suite-cta">
+              <button class="uk-button uk-button-default">Start Process</button>
+            </div>
+          </div>
         </div>
-        <div class="suite-number">
-          1
+        <!-- /end .uk-card -->
+
+        <div>
+          <div class="uk-card">
+            <div class="suite-value-top"></div>
+            <div class="suite-number">
+              2
+            </div>
+            <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
+              <p>PRODUCT
+                <span>DONATION</span>
+              </p>
+            </div>
+            <div class="suite-benefits">
+              <ul class="uk-list">
+                <li>Industry expert, unbiased product review video</li>
+                <li>
+                  <span>Product installation in Mix Power Studio</span>
+                </li>
+                <li>Tier 3 Logo placement for supporting organizations</li>
+              </ul>
+            </div>
+            <div class="suite-cta">
+              <button class="uk-button uk-button-default">Start Process</button>
+            </div>
+          </div>
         </div>
-        <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
-          <p>FREE</p>
+        <!-- /end .uk-card -->
+
+        <div>
+          <div class="uk-card">
+            <div class="suite-value-top"></div>
+            <div class="suite-number">
+              3
+            </div>
+            <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
+              <p>$1500</p>
+            </div>
+            <div class="suite-benefits">
+              <ul class="uk-list">
+                <li>Industry expert, unbiased product review video</li>
+                <li>
+                  <span>Complete ecommerce integrated into video www.yourproduct.com</spn>
+                </li>
+                <li>Tier 3 Logo placement for supporting organizations</li>
+              </ul>
+            </div>
+            <div class="suite-cta">
+              <button class="uk-button uk-button-default">Start Process</button>
+            </div>
+          </div>
         </div>
-        <div class="suite-benefits">
-          <ul class="uk-list">
-            <li>Industry expert, unbiased product review video</li>
-          </ul>
+        <!-- /end .uk-card -->
+
+        <div>
+          <div class="uk-card bestvalue uk-margin-remove">
+            <div class="suite-value-top">
+              <p>BEST VALUE</p>
+            </div>
+            <div class="suite-number">
+              4
+            </div>
+            <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
+              <p>
+                <span>$1500 +</span><br/>
+                PRODUCT
+                <span>DONATION</span>
+              </p>
+            </div>
+            <div class="suite-benefits">
+              <ul class="uk-list">
+                <li>Industry expert, unbiased product review video</li>
+                <li>
+                  <span>Complete ecommerce integrated into video www.yourproduct.com</spn>
+                </li>
+                <li>Tier 2 Logo placement for supporting organizations</li>
+                <li>
+                  <span>Product installation in Mix Power Studio</span>
+                </li>
+              </ul>
+            </div>
+            <div class="suite-cta">
+              <button class="uk-button uk-button-danger">Start Process</button>
+            </div>
+          </div>
         </div>
-        <div class="suite-cta">
-          <button class="uk-button uk-button-default">Start Process</button>
-        </div>
+        <!-- /end .uk-card -->
+
       </div>
-      </div><!-- /end .uk-card -->
-      
-      <div>
-      <div class="uk-card">
-        <div class="suite-value-top">
-          
-        </div>
-        <div class="suite-number">
-          2
-        </div>
-        <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
-          <p>PRODUCT <span>DONATION</span></p>
-        </div>
-        <div class="suite-benefits">
-          <ul class="uk-list">
-            <li>Industry expert, unbiased product review video</li>
-            <li><span>Product installation in Mix Power Studio</span></li>
-            <li>Tier 3 Logo placement for supporting organizations</li>
-          </ul>
-        </div>
-        <div class="suite-cta">
-          <button class="uk-button uk-button-default">Start Process</button>
-        </div>
-      </div>
-      </div><!-- /end .uk-card -->
-      
-      <div>
-      <div class="uk-card">
-        <div class="suite-value-top">
-          
-        </div>
-        <div class="suite-number">
-          3
-        </div>
-        <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
-          <p>$1500</p>
-        </div>
-        <div class="suite-benefits">
-          <ul class="uk-list">
-            <li>Industry expert, unbiased product review video</li>
-            <li><span>Complete ecommerce integrated into video www.yourproduct.com</spn></li>
-            <li>Tier 3 Logo placement for supporting organizations</li>
-          </ul>
-        </div>
-        <div class="suite-cta">
-          <button class="uk-button uk-button-default">Start Process</button>
-        </div>
-      </div>
-      </div><!-- /end .uk-card -->
-      
-      <div>
-      <div class="uk-card bestvalue uk-margin-remove">
-        <div class="suite-value-top">
-          <p>BEST VALUE</p>
-        </div>
-        <div class="suite-number">
-          4
-        </div>
-        <div class="suite-value uk-flex uk-flex-bottom uk-flex-center">
-          <p><span>$1500 +</span><br /> PRODUCT <span>DONATION</span></p>
-        </div>
-        <div class="suite-benefits">
-          <ul class="uk-list">
-            <li>Industry expert, unbiased product review video</li>
-            <li><span>Complete ecommerce integrated into video www.yourproduct.com</spn></li>
-            <li>Tier 2 Logo placement for supporting organizations</li>
-            <li><span>Product installation in Mix Power Studio</span></li>
-          </ul>
-        </div>
-        <div class="suite-cta">
-          <button class="uk-button uk-button-danger">Start Process</button>
-        </div>
-      </div>
-      </div><!-- /end .uk-card -->
-      
-      
-      </div><!-- /end .uk-grid -->
-      
- 
-    </div><!-- /end .uk-container -->
+      <!-- /end .uk-grid -->
+
+    </div>
+    <!-- /end .uk-container -->
   </div>
 
   <div style="background:url({{ base_path ~ directory }}/img/hometop.jpg) top center #1a1a1a;background-size:cover;">
-  
+
     <div class="uk-container">
       <div class="uk-section uk-flex uk-flex-center uk-flex-middle uk-text-center" uk-height-viewport="offset-top: true; offset-bottom: 50px">
         <div class="uk-inline uk-position-relative">
           <img src="{{ base_path ~ directory }}/img/frontlogo.png" alt="">
           <div class="uk-text-small uk-text-uppercase uk-light uk-position-relative uk-text-center" data-0="opacity:1;" data-300="opacity:0;" style="position:relative;z-index:100;">
-          mixpowertraining.com by Qode 1
+            mixpowertraining.com by Qode 1
           </div>
           <div class="uk-inline uk-margin-large-top uk-text-left" style="background-color:black;width:200px;">
             <div data-0="margin-left:0px;" data-450-top="margin-left:150px;">
@@ -246,54 +253,54 @@
         </div>
       </div>
     </div>
-    
-    
-  <div class="uk-container">
-	<div class="uk-child-width-1-3@s uk-child-width-1-5@m uk-text-center uk-light uk-margin-bottom bn-blocks" uk-grid>
-	
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span class="red">100%</span> Unbiased
-		</h2>
-	</div>
-	
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>FREE</span> Learning
-		</h2>
-	</div>
-	
-	<div class="uk-card uk-card-body uk-visible@m">
-		<h2>
-		<span>PRO</span> Gear
-		</h2>
-	</div>
-	
-	<div class="uk-card uk-card-body">
-		<h2>
-		<span>EXPERT</span> Tricks
-		</h2>
-	</div>
-	
-	<div class="uk-card uk-card-body uk-visible@m">
-		<h2>
-		<span>INSTANT</span> Access
-		</h2>
-	</div>
 
-	</div>
+    <div class="uk-container">
+      <div class="uk-child-width-1-3@s uk-child-width-1-5@m uk-text-center uk-light uk-margin-bottom bn-blocks" uk-grid>
+
+        <div class="uk-card uk-card-body">
+          <h2>
+            <span class="red">100%</span>
+            Unbiased
+          </h2>
+        </div>
+
+        <div class="uk-card uk-card-body">
+          <h2>
+            <span>FREE</span>
+            Learning
+          </h2>
+        </div>
+
+        <div class="uk-card uk-card-body uk-visible@m">
+          <h2>
+            <span>PRO</span>
+            Gear
+          </h2>
+        </div>
+
+        <div class="uk-card uk-card-body">
+          <h2>
+            <span>EXPERT</span>
+            Tricks
+          </h2>
+        </div>
+
+        <div class="uk-card uk-card-body uk-visible@m">
+          <h2>
+            <span>INSTANT</span>
+            Access
+          </h2>
+        </div>
+
+      </div>
+    </div>
+
   </div>
-  
-  
 </div>
+  {% include '@form3/includes/highlights-status.html.twig' %}
 
+  {% include '@form3/includes/footer.html.twig' %}
 
-
-{% include '@form3/includes/highlights-status.html.twig' %}
-
-
-{% include '@form3/includes/footer.html.twig' %}
-
-</div>
 
 {% include '@form3/includes/offcanvas.html.twig' %}
+
