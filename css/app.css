@@ -245,7 +245,7 @@ nav.navigation:nth-child(2) h2 {
 nav.navigation .uk-navbar-nav, nav.navigation .uk-navbar-nav>li.uk-parent {
 	display:block;
 }
-nav.navigation .uk-navbar-nav>li.uk-parent>a {
+nav.navigation .uk-navbar-nav>li.uk-parent>a, nav.navigation .uk-navbar-nav>li>a {
 	height:50px;
 	border-top:1px solid #808080;
 	display:block;
