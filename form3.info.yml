@@ -1,4 +1,4 @@
-name: form3
+name: Form3
 type: theme
 description: Form3 Sub Theme for the new Uikitty3 - customize to your hearts content!
 core: 8.x
@@ -10,8 +10,6 @@ stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.css
 
 regions:
-  navigation: 'Navigation'
-  header: 'Header'
   breadcrumb: 'Breadcrumb'
   pagetitle: 'Page Title'
   branding: 'Branding'
@@ -25,6 +23,4 @@ regions:
   sidebar_second: 'Secondary'
   video_sidebar: 'Video Sidebar'
   footer: 'Footer'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
   offcanvas: 'Off-canvas'

@@ -5,7 +5,7 @@
 	background:rgba(0,0,0,.5);
 	height:157px;
 }
-.region-mainmenu {
+nav.navigation {
 	border-bottom:1px solid #808080;
 }
 h1.page-title {
@@ -27,6 +27,9 @@ h2.front-headline span {
 .ds-darkbgs h1.page-title {
 	color:rgba(255,255,255,0.8);
 	margin-bottom:70px;
+}
+.ih-topbar {
+	max-width:1200px;
 }
 .ih-header-container .uk-overlay-panel .uk-grid {
 	min-height:212px;
@@ -61,11 +64,13 @@ h2.front-headline span {
 .site-branding {
 	display:none;
 }
-.uk-navbar-nav>li>a {
+.uk-nav>li>a {
     text-shadow:none;
     border:0;
+    color:#999;
+    font-size:.875rem;
 }
-.uk-navbar-nav>li.uk-open>a, .uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a:focus {
+.uk-nav>li.uk-open>a, .uk-nav>li:hover>a, .uk-nav>li>a:focus {
     background-color:transparent;
     color:#fff;
     border:0
@@ -222,7 +227,7 @@ ul.ds-nodelinks {
 nav .uk-overlay {
 	padding:25px;
 }
-nav.navigation:nth-child(2) {
+nav.navigation:nth-child(3) {
 	border-right:1px solid #808080;
 }
 nav.navigation h2 {
@@ -238,14 +243,15 @@ width:100%;
 	vertical-align:text-bottom;
 	margin-bottom:0;
 	display:block;
+	position:relative;
 }
-nav.navigation:nth-child(2) h2 {
+nav.navigation:nth-child(3) h2 {
 	background-color:#f42434;
 }
-nav.navigation .uk-navbar-nav, nav.navigation .uk-navbar-nav>li.uk-parent {
+nav.navigation>.uk-nav, nav.navigation>.uk-nav>li.uk-parent {
 	display:block;
 }
-nav.navigation .uk-navbar-nav>li.uk-parent>a, nav.navigation .uk-navbar-nav>li>a {
+nav.navigation>.uk-nav>li.uk-parent>a, nav.navigation>.uk-nav>li>a {
 	height:50px;
 	border-top:1px solid #808080;
 	display:block;
@@ -323,10 +329,7 @@ nav.navigation .uk-navbar-nav>li.uk-parent>a, nav.navigation .uk-navbar-nav>li>a
 .uk-subnav-pill>*>:first-child {
 	padding:0 25px;
 }
-.block-system-branding-block {
-	width:auto;
-	padding-left:15px;
-}
+
 .video-column {
 	max-width:1200px;
 }
@@ -429,6 +432,20 @@ h3.sidetitle {
     background-color: #000;
    
 }
+.uk-logo {
+    margin-left: 25px;
+    line-height: 105px;
+}
+.uk-offcanvas .block-system-branding-block, .uk-offcanvas .uk-logo {
+	padding-left:0;
+	margin-left:0;
+}
+.socialbar {
+	border-top:1px solid #808080;
+}
+.socialbar a {
+	line-height:50px;
+}
 @media (max-width: 767px) {
 .form3-title h1.page-title, .form3-title-wide h1.page-title {
 	margin-top:35px;
@@ -447,9 +464,7 @@ h2.front-headline {
 
 }/* end media query max 768 */
 @media only screen and (min-width : 960px) {
-.uk-navbar-dropdown {
-	width:300px;
-}
+
 .form3-title {
 	background-color:rgba(0,0,0,0.7);
 	margin-left:0;
@@ -458,10 +473,7 @@ h2.front-headline {
 
 }
 @media (min-width: 1000px) {
-nav.navigation {
-	width:300px;
-	float:left;
-}
+
  .form3-title {
 	background-color:rgba(0,0,0,0.7);
 	padding:25px;
@@ -474,23 +486,16 @@ nav.navigation {
 	padding-left:0;
 	width:400px;
 }
-.uk-navbar-dropdown {
+.uk-dropdown {
 	width:400px;
 }
-nav.navigation {
-	width:400px;
-	float:left;
-}
-nav.navigation.searchnav {
-	width:380px;
-}
+
 nav.navigation.searchnav h2{
 	background-color:transparent;
 }
  .form3-title {
 	background-color:rgba(0,0,0,0.7);
-	margin-left:400px;
-	padding:25px;
+	padding:25px 25px 25px 425px;
 	width:750px;
 }
  .form3-title-wide {
@@ -500,6 +505,7 @@ nav.navigation.searchnav h2{
 }
 .form3-page {
 	margin:0 0 0 400px;
+	
 	max-width:800px;
 	border-right:1px solid rgba(100,100,100,0.6);
 }

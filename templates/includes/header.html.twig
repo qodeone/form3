@@ -1,12 +1,12 @@
 <div class="ih-topbar">
-    <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
-      <div class="uk-navbar-left">
-        {{ page.branding }}
-        {{ page.mainmenu }}
-     {% include '@form3/includes/searchmenu.html.twig' %} 
-      </div>
-      <div class="uk-navbar-right">    
+  
+	      <div class="uk-grid-collapse uk-child-width-expand@l" uk-grid>
+	        {{ page.branding }}
+	        {{ page.mainmenu }}
+	      </div>
+     
+      <div class="uk-float-right">    
          <a class="uk-navbar-toggle uk-margin-large-right uk-hidden@l" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a> 
       </div>
-    </nav>
+
 </div>

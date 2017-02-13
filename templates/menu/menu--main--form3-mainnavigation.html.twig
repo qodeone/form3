@@ -26,10 +26,10 @@
    {% import _self as menus %}
    {% if items %}
      {% if menu_level == 0 %}
-       <ul{{ attributes }}>
+       <ul{{ attributes.addClass('uk-nav', 'uk-nav-default', 'uk-nav-parent-icon') }} uk-nav>
      {% else %}
     
-       <ul{{ attributes.addClass('uk-nav-default', 'uk-nav-parent-icon') }} uk-nav>
+       <ul{{ attributes.addClass('uk-nav', 'uk-nav-default') }}>
      {% endif %}
      {% for item in items %}
        {% if menu_level == 0 and item.is_expanded %}
