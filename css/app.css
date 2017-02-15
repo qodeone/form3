@@ -77,8 +77,14 @@ h2.front-headline span {
     text-shadow:none;
     text-decoration:none;
 }
+.footwrap .uk-nav>li.uk-open>a, .footwrap .uk-nav>li:hover>a, .footwrap .uk-nav>li>a:focus {
+	color:black;
+}
 .ds-mainmenu .ds-mainmenu > a {
     color:#555;
+}
+.uk-dropdown>.uk-nav>li.uk-open>a, .uk-dropdown>.uk-nav>li:hover>a, .uk-dropdown>.uk-nav>li>a:focus {
+	color:#f42434;
 }
 .ih-header-container.ds-darkbgs {
 	background:url(../img/darkbgs/greypolygonswide.jpg) center center #666;
@@ -102,7 +108,9 @@ h2.front-headline span {
     text-decoration:none;
     background:#ddd;
 }
-
+.max1200 {
+	max-width:1200px;
+}
 .kitty-teaser {
     box-shadow:0 0 30px rgba(0,0,0,0.1);
 }
@@ -117,7 +125,7 @@ h2.front-headline span {
 }
 .page-node-type-page .field--name-field-image {
     margin-bottom:30px;
-    box-shadow:0 0 45px #ccc;
+  
 }
 .kitty-teaser .uk-subnav-pill a {
     border:1px solid rgba(30,30,30,0.2);
@@ -313,6 +321,10 @@ nav.navigation>.uk-nav>li.uk-parent>a, nav.navigation>.uk-nav>li>a {
 	line-height:49px;
 	border-left:1px solid #ddd;
 }
+.uk-subnav-pill>.uk-active>a {
+    background-color: #1a1a1a;
+    color: #fff;
+}
 .video-sidebar .uk-subnav-pill {
 	border-bottom:1px solid #111;
 }
@@ -394,12 +406,16 @@ h3.sidetitle {
     color: #A9B4BA;
 }
 
-
+.path-frontpage .uk-button-default {
+	background-color:white;
+	color:#444;
+}
 .uk-button-group .uk-button {
 	min-width:auto;
 }
-
-
+.uk-button-danger {
+	background-color:#F42434;
+}
 .suite-value-top {
 	height:54px;
 }
@@ -416,9 +432,15 @@ h3.sidetitle {
 	margin-bottom:25px;
 }
 .suite-benefits {
-	height:338px;
+	min-height:338px;
 	font-size:16px;
 	font-weight:300;
+	margin-left:15px;
+	margin-right:15px;
+	font-family:'Source Sans Pro';
+}
+.suite-benefits li {
+	margin-bottom:25px;
 }
 .suite-benefits span, .suite-value span {
 	font-weight:700;
@@ -432,8 +454,11 @@ h3.sidetitle {
     background-color: #000;
    
 }
+[class*=uk-dropdown-bottom] {
+    margin-top: 0;
+}
 .uk-logo {
-    margin-left: 25px;
+    margin-left: 50px;
     line-height: 105px;
 }
 .uk-offcanvas .block-system-branding-block, .uk-offcanvas .uk-logo {
@@ -442,18 +467,20 @@ h3.sidetitle {
 }
 .socialbar {
 	border-top:1px solid #808080;
+	background-color:rgba(0,0,0,0.4);
+	height:51px;
 }
 .socialbar a {
-	line-height:50px;
+	line-height:51px;
+	height: 51px;
+    display: block;
 }
 @media (max-width: 767px) {
 .form3-title h1.page-title, .form3-title-wide h1.page-title {
 	margin-top:35px;
 	margin-bottom:30px;
 }
-.block-system-branding-block {
-	max-width:210px;
-}
+
 h2.front-headline {
 	font-size:80px;
 	line-height:76px;
@@ -482,10 +509,7 @@ h2.front-headline {
 }/* end media query max 768 */
 
 @media (min-width: 1220px) {
-.block-system-branding-block {
-	padding-left:0;
-	width:400px;
-}
+
 .uk-dropdown {
 	width:400px;
 }
@@ -495,8 +519,8 @@ nav.navigation.searchnav h2{
 }
  .form3-title {
 	background-color:rgba(0,0,0,0.7);
-	padding:25px 25px 25px 425px;
-	width:750px;
+	padding:25px;
+	width:1150px;
 }
  .form3-title-wide {
 	background-color:rgba(0,0,0,0.7);
